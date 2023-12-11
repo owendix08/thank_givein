@@ -1,4 +1,3 @@
-# thank_givein
 # Turkey Cooking Time Estimation Program
 
 ## Overview
