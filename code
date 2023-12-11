@@ -1,0 +1,26 @@
+def calculate_cooking_time(weight):
+    # Using a simple formula: 15 minutes per pound
+    cooking_time = weight * 15
+    return cooking_time
+
+def main():
+    try:
+        # Get the weight of the turkey from the user
+        weight = float(input("Enter the weight of the turkey in pounds: "))
+        
+        # Validate that the weight is positive
+        if weight <= 0:
+            print("Invalid weight. Please enter a positive value.")
+            return
+
+        # Calculate the cooking time
+        cooking_time = calculate_cooking_time(weight)
+
+        # Display the result
+        print(f"\nEstimated cooking time for a {weight}-pound turkey: {cooking_time} minutes\n")
+
+    except ValueError:
+        print("Invalid input. Please enter a valid number for the weight.")
+
+if __name__ == "__main__":
+    main()
